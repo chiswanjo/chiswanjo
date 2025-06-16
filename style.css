@@ -8,5 +8,7 @@
 main {
   display: flex; /* enable flexbox */
   flex-direction: column; /* stack its children vertically */
+  padding: 20px;
+  margin: 20px;
   order: 4; /* set the flex order */
 }
