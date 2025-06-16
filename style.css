@@ -5,6 +5,8 @@
 
 
 
-footer > a {
-  display: inline-block;
+main {
+  display: flex; /* enable flexbox */
+  flex-direction: column; /* stack its children vertically */
+  order: 4; /* set the flex order */
 }
