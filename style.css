@@ -1,13 +1,43 @@
-
-
-
-
-
-
-
-main {
-  display: flex; /* enable flexbox */
-  flex-direction: column; /* stack its children vertically */
-  padding: 0 20px;
-  order: 4; /* set the flex order */
-}
+body {
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    a {
+      color: #fff;
+      text-decoration: underline;
+    }
+    a:hover {
+      opacity: 0.8;
+    }
+    .navigation {
+      padding: 1rem;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+    .hero, .hire, .obsession, footer {
+      padding: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    h1, h2, h3, h4 {
+      margin-bottom: 0.5rem;
+    }
+    p, li {
+      margin-bottom: 0.5rem;
+    }
+    ol, ul {
+      padding-left: 1.5rem;
+    }
+    footer {
+      border-top: 1px solid #333;
+      text-align: center;
+      padding-top: 1.5rem;
+      font-size: 0.9rem;
+    }
+    footer main a {
+      margin: 0 0.5rem;
+    }
