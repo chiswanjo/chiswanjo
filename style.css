@@ -1,4 +1,7 @@
-body {
+* {
+      box-sizing: border-box;
+    }
+    body {
       font-family: Arial, sans-serif;
       background-color: #000;
       color: #fff;
@@ -38,6 +41,18 @@ body {
       padding-top: 1.5rem;
       font-size: 0.9rem;
     }
-    footer main a {
-      margin: 0 0.5rem;
+    footer main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+    @media (max-width: 600px) {
+      .hero, .hire, .obsession, footer {
+        padding: 1rem;
+      }
+      footer main {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
     }
