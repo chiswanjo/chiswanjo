@@ -11,46 +11,89 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Hero Section: introduces the challenge with a striking black background and white text -->
+  <!-- Hero Section -->
   <section class="hero">
     <div class="container">
       <h1 class="title">30 Days 30 Products</h1>
-      <p class="subtitle">Join me on a journey of creation, one digital drop a day for $1</p>
-      <a href="#products" class="btn">Start Day 1&nbsp;&rarr;</a>
+      <p class="subtitle">One digital creation every day for only $1. Join the challenge and grow with me.</p>
+      <a href="#featured-product" class="btn">Get Started Today</a>
     </div>
   </section>
 
-  <!-- About Section: storytelling narrative about why this challenge matters -->
-  <section class="about">
+  <!-- Showcase Section: Recent Work -->
+  <section class="showcase">
     <div class="container">
-      <h2>Why This Challenge?</h2>
-      <p>
-        Day by day, we build momentum; creativity grows with consistency.
-        Every product tells part of our story, and together they become a legacy.
-      </p>
-    </div>
-  </section>
-
-  <!-- Products Section: grid of daily drops that will fill as days progress -->
-  <section id="products" class="products">
-    <div class="container">
-      <h2>Daily Drops</h2>
+      <h2>Recent Work</h2>
       <div class="grid">
-        <!-- Each .card represents one day's product -->
         <div class="card">
-          <span class="day">Day 1</span>
-          <p class="desc">Template for LinkedIn post planning</p>
-          <a href="#" class="buy">Buy for $1</a>
+          <h3>Adamlead.com</h3>
+          <p>A lead database for recently funded company contacts. Earned $110+ in revenue before shutting down due to international payment issues.</p>
         </div>
-        <!-- More cards will be appended dynamically -->
       </div>
     </div>
   </section>
 
-  <!-- Call-to-Action Section: encourages sign up or subscription for updates -->
+  <!-- Clients Section: Previous Clients -->
+  <section class="clients">
+    <div class="container">
+      <h2>Clients</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Levi Tijerina – Gamut.io</h3>
+          <ul>
+            <li>Built email lists of photographers and videographers</li>
+            <li>Assisted with Framer.com website builds</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Christian Fea – Monarch.is</h3>
+          <ul>
+            <li>Wrote 65+ articles to boost organic traffic</li>
+            <li>Built targeted cannabis industry email lists</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Mary Wilkins – The Wilkins Group</h3>
+          <ul>
+            <li>Set up Mailchimp postcard outreach campaigns</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <div class="container">
+      <h2>Testimonials</h2>
+      <div class="grid">
+        <div class="card">
+          <p class="quote">"Stanley's work transformed our online presence and boosted engagement overnight."</p>
+          <p class="author">— Jane Doe, Company XYZ</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Product Section -->
+  <section id="featured-product" class="featured-product">
+    <div class="container">
+      <h2>Featured Drop</h2>
+      <div class="product">
+        <div class="image">[Product Visual]</div>
+        <div class="details">
+          <h3>Product Title</h3>
+          <p>Short persuasive description that highlights benefits and value.</p>
+          <a href="#" class="btn">Buy for $1</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
   <section class="cta">
     <div class="container">
-      <h2>Stay Updated</h2>
+      <h2>Stay in the Loop</h2>
       <form class="signup-form">
         <input type="email" placeholder="Your email address" required>
         <button type="submit">Notify Me</button>
@@ -58,11 +101,12 @@
     </div>
   </section>
 
-  <!-- Footer Section: minimal credits and domain info -->
+  <!-- Footer -->
   <footer>
     <div class="container">
       <p>&copy; 2025 Chiswanjo.xyz. All rights reserved.</p>
     </div>
   </footer>
+
 </body>
 </html>
