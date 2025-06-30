@@ -1,132 +1,192 @@
-/* Base Reset to ensure consistency across browsers */
+/* Base Reset for consistent styling */
 * {
   margin: 0;
   padding: 0;
-  box sizing: border box;
+  box-sizing: border-box;
 }
 
-/* Root variables for easy theming, only black and white */
+/* Theme Variables */
 :root {
   --black: #000000;
   --white: #FFFFFF;
-  --font main: 'Helvetica Neue', Arial, sans-serif;
+  --font-main: 'Helvetica Neue', Arial, sans-serif;
 }
 
-/* Global body styles setting the main font and background */
+/* Global Styles */
 body {
-  font family: var(--font main);
-  background color: var(--white);
+  font-family: var(--font-main);
+  background-color: var(--white);
   color: var(--black);
-  line height: 1.6;
+  line-height: 1.6;
 }
 
-/* Container to center content and limit width */
 .container {
   width: 90%;
-  max width: 960px;
+  max-width: 1200px;
   margin: auto;
+  padding: 2rem 0;
 }
 
-/* Hero Section styling with full height and centered content */
-.hero {
-  background color: var(--black);
+a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+a.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid var(--black);
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+a.btn:hover {
+  background-color: var(--black);
   color: var(--white);
+}
+
+/* Hero Section */
+.hero {
+  background-color: var(--white);
+  color: var(--black);
   display: flex;
-  align items: center;
-  justify content: center;
-  text align: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   height: 100vh;
-  /* Storytelling effect starts with strong contrast */
 }
 .hero .title {
-  font size: 3rem;
+  font-size: 4rem;
+  margin-bottom: 1rem;
 }
 .hero .subtitle {
-  font size: 1.25rem;
-  margin top: 1rem;
-}
-.hero .btn {
-  display: inline block;
-  margin top: 2rem;
-  padding: 0.75rem 1.5rem;
-  border: 2px solid var(--white);
-  text decoration: none;
-  font weight: bold;
-  /* button invites action with clear boundary */
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
 }
 
-/* About Section with airy spacing for narrative */
-.about {
-  padding: 4rem 0;
+/* Showcase Section */
+.showcase h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
 }
-.about h2 {
-  font size: 2rem;
-  margin bottom: 1rem;
-}
-.about p {
-  max width: 700px;
-  margin top: 1rem;
-}
-
-/* Products Section grid introducing daily drops */
-.products {
-  padding: 4rem 0;
-}
-.products h2 {
-  font size: 2rem;
-  text align: center;
-  margin bottom: 2rem;
-}
-.grid {
+.showcase .grid {
   display: grid;
-  grid template columns: repeat(auto fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
 }
-.card {
+.showcase .card {
   border: 1px solid var(--black);
-  padding: 1.5rem;
-  text align: center;
+  padding: 2rem;
 }
-.card .day {
-  display: block;
-  font size: 1.5rem;
-  font weight: bold;
-}
-.card .desc {
-  margin top: 0.5rem;
-}
-.card .buy {
-  display: inline block;
-  margin top: 1rem;
-  text decoration: none;
-  font weight: bold;
-  border bottom: 1px solid var(--black);
+.showcase .card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
-/* CTA Section encouraging signups with clear input focus */
+/* Clients Section */
+.clients h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.clients .logo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+.clients .logo {
+  font-weight: bold;
+  opacity: 0.6;
+  min-width: 100px;
+  text-align: center;
+}
+
+/* Testimonials Section */
+.testimonials h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.testimonials .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+.testimonials .card {
+  padding: 2rem;
+  border-left: 4px solid var(--black);
+}
+.testimonials .quote {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+.testimonials .author {
+  text-align: right;
+  font-weight: bold;
+}
+
+/* Featured Product Section */
+.featured-product {
+  padding: 4rem 0;
+}
+.featured-product h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.featured-product .product {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+.featured-product .image {
+  flex: 1;
+  min-width: 300px;
+  height: 300px;
+  background-color: var(--black);
+  opacity: 0.1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+.featured-product .details {
+  flex: 1;
+}
+.featured-product .details h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.featured-product .details p {
+  margin-bottom: 1.5rem;
+}
+
+/* CTA Section */
 .cta {
-  background color: var(--black);
-  color: var(--white);
-  padding: 3rem 0;
-  text align: center;
+  background-color: var(--white);
+  color: var(--black);
+  text-align: center;
+  padding: 4rem 0;
 }
 .signup-form input {
   padding: 0.75rem;
   width: 60%;
-  max width: 300px;
-  margin right: 0.5rem;
-  border: none;
+  max-width: 350px;
+  margin-right: 0.5rem;
+  border: 1px solid var(--black);
 }
 .signup-form button {
   padding: 0.75rem 1.5rem;
-  border: 2px solid var(--white);
-  background transparent;
-  font weight: bold;
+  border: 2px solid var(--black);
+  font-weight: bold;
 }
 
-/* Footer minimal styling with reduced opacity for subtlety */
+/* Footer */
 footer {
+  text-align: center;
   padding: 2rem 0;
-  text align: center;
   opacity: 0.6;
 }
