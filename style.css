@@ -1,192 +1,43 @@
-/* Base Reset for consistent styling */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Theme Variables */
-:root {
-  --black: #000000;
-  --white: #FFFFFF;
-  --font-main: 'Helvetica Neue', Arial, sans-serif;
-}
-
-/* Global Styles */
 body {
-  font-family: var(--font-main);
-  background-color: var(--white);
-  color: var(--black);
-  line-height: 1.6;
-}
-
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-  padding: 2rem 0;
-}
-
-a {
-  color: var(--black);
-  text-decoration: none;
-}
-
-a.btn {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  border: 2px solid var(--black);
-  font-weight: bold;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-a.btn:hover {
-  background-color: var(--black);
-  color: var(--white);
-}
-
-/* Hero Section */
-.hero {
-  background-color: var(--white);
-  color: var(--black);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  height: 100vh;
-}
-.hero .title {
-  font-size: 4rem;
-  margin-bottom: 1rem;
-}
-.hero .subtitle {
-  font-size: 1.25rem;
-  margin-bottom: 2rem;
-}
-
-/* Showcase Section */
-.showcase h2 {
-  font-size: 2.5rem;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-.showcase .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-}
-.showcase .card {
-  border: 1px solid var(--black);
-  padding: 2rem;
-}
-.showcase .card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-/* Clients Section */
-.clients h2 {
-  font-size: 2.5rem;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-.clients .logo-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 3rem;
-}
-.clients .logo {
-  font-weight: bold;
-  opacity: 0.6;
-  min-width: 100px;
-  text-align: center;
-}
-
-/* Testimonials Section */
-.testimonials h2 {
-  font-size: 2.5rem;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-.testimonials .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-}
-.testimonials .card {
-  padding: 2rem;
-  border-left: 4px solid var(--black);
-}
-.testimonials .quote {
-  font-style: italic;
-  margin-bottom: 1rem;
-}
-.testimonials .author {
-  text-align: right;
-  font-weight: bold;
-}
-
-/* Featured Product Section */
-.featured-product {
-  padding: 4rem 0;
-}
-.featured-product h2 {
-  font-size: 2.5rem;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-.featured-product .product {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 2rem;
-}
-.featured-product .image {
-  flex: 1;
-  min-width: 300px;
-  height: 300px;
-  background-color: var(--black);
-  opacity: 0.1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-}
-.featured-product .details {
-  flex: 1;
-}
-.featured-product .details h3 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-.featured-product .details p {
-  margin-bottom: 1.5rem;
-}
-
-/* CTA Section */
-.cta {
-  background-color: var(--white);
-  color: var(--black);
-  text-align: center;
-  padding: 4rem 0;
-}
-.signup-form input {
-  padding: 0.75rem;
-  width: 60%;
-  max-width: 350px;
-  margin-right: 0.5rem;
-  border: 1px solid var(--black);
-}
-.signup-form button {
-  padding: 0.75rem 1.5rem;
-  border: 2px solid var(--black);
-  font-weight: bold;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 2rem 0;
-  opacity: 0.6;
-}
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    a {
+      color: #fff;
+      text-decoration: underline;
+    }
+    a:hover {
+      opacity: 0.8;
+    }
+    .navigation {
+      padding: 1rem;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+    .hero, .hire, .obsession, footer {
+      padding: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    h1, h2, h3, h4 {
+      margin-bottom: 0.5rem;
+    }
+    p, li {
+      margin-bottom: 0.5rem;
+    }
+    ol, ul {
+      padding-left: 1.5rem;
+    }
+    footer {
+      border-top: 1px solid #333;
+      text-align: center;
+      padding-top: 1.5rem;
+      font-size: 0.9rem;
+    }
+    footer main a {
+      margin: 0 0.5rem;
+    }
